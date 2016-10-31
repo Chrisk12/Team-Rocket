@@ -50,6 +50,17 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
+  .state('tab.events', {
+    url: '/events',
+    views: {
+      'tab-events': {
+        templateUrl: 'templates/tab-events.html',
+        controller: 'EventsCtrl'
+      }
+    }
+  })
+
+
   .state('tab.chats', {
       url: '/chats',
       views: {
@@ -79,6 +90,18 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   });
 
+//TODO Causes the app to crash?
+/*
+  .state('tab.preferences', {
+    url: '/preferences',
+    views: {
+      'tab-preferences': {
+        templateUrl: 'templates/tab-preferences.html',
+        controller: 'PreferencesCtrl'
+      }
+    }
+  });
+*/
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/dash');
 
