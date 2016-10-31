@@ -88,10 +88,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         controller: 'AccountCtrl'
       }
     }
-  });
+  })
 
 //TODO Causes the app to crash?
-/*
+
   .state('tab.preferences', {
     url: '/preferences',
     views: {
@@ -101,7 +101,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   });
-*/
+
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/dash');
 
