@@ -12,9 +12,6 @@ angular.module('starter.controllers', [])
   //});
 
   $scope.events = Events.all();
-  $scope.remove = function(event) {
-    Events.remove(event);
-  };
 })
 
 .controller('PreferencesCtrl', function($scope) {})
