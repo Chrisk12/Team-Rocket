@@ -47,4 +47,43 @@ angular.module('starter.services', [])
       return null;
     }
   };
+})
+
+.factory('Events', function() {
+  // Might use a resource here that returns a JSON array
+
+  // Some fake testing data
+  var events = [{
+    id: 0,
+    name: 'Soccer game for pros',
+    lastText: 'You on your way?',
+    face: 'img/soccer.png'
+  }, {
+    id: 1,
+    name: 'Chillax at Pool',
+    lastText: 'Hey, it\'s me',
+    face: 'img/drunk.png'
+  }, {
+    id: 2,
+    name: 'N00b Bask3t',
+    lastText: 'I should buy a boat',
+    face: 'img/basket.png'
+  }];
+
+  return {
+    all: function() {
+      return events;
+    },
+    remove: function(event) {
+      events.splice(events.indexOf(event), 1);
+    },
+    get: function(eventId) {
+      for (var i = 0; i < events.length; i++) {
+        if (events[i].id === parseInt(eventId)) {
+          return events[i];
+        }
+      }
+      return null;
+    }
+  };
 });
