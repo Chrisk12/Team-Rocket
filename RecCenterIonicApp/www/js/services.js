@@ -55,18 +55,18 @@ angular.module('starter.services', [])
   // Some fake testing data
   var events = [{
     id: 0,
-    name: 'Soccer game for pros',
-    lastText: 'You on your way?',
+    name: 'Soccer game for PROs',
+    start: '4 Nov 15:00',
     face: 'img/soccer.png'
   }, {
     id: 1,
     name: 'Chillax at Pool',
-    lastText: 'Hey, it\'s me',
+    start: '5 Nov 8:00',
     face: 'img/drunk.png'
   }, {
     id: 2,
     name: 'N00b Bask3t',
-    lastText: 'I should buy a boat',
+    start: '14 Nov 18:00',
     face: 'img/basket.png'
   }];
 
