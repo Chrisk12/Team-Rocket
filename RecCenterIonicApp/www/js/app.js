@@ -90,8 +90,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
-//TODO Causes the app to crash?
-
   .state('tab.preferences', {
     url: '/preferences',
     views: {
