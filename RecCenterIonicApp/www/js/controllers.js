@@ -38,6 +38,16 @@ angular.module('starter.controllers', [])
 .controller('AccountCtrl', function($scope) {
   $scope.settings = {
     enableFriends: true
+  }
+})
+
+.controller('SettingsCtrl', function($scope) {
+  $scope.settings = {
+    enableFriends: true
   };
+<<<<<<< HEAD
+});
+=======
 });
 
+>>>>>>> 6fe9a557a8e0c42917ae29c3ff630a9d66c48f4e
