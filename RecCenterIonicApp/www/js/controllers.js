@@ -14,8 +14,6 @@ angular.module('starter.controllers', [])
   $scope.events = Events.all();
 })
 
-.controller('PreferencesCtrl', function($scope) {})
-
 .controller('ChatsCtrl', function($scope, Chats) {
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
@@ -45,9 +43,4 @@ angular.module('starter.controllers', [])
   $scope.settings = {
     enableFriends: true
   };
-<<<<<<< HEAD
 });
-=======
-});
-
->>>>>>> 6fe9a557a8e0c42917ae29c3ff630a9d66c48f4e
