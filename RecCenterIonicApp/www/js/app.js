@@ -90,12 +90,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
-  .state('tab.preferences', {
-    url: '/preferences',
+  .state('tab.settings', {
+    url: '/settings',
     views: {
-      'tab-preferences': {
-        templateUrl: 'templates/tab-preferences.html',
-        controller: 'PreferencesCtrl'
+      'tab-settings': {
+        templateUrl: 'templates/tab-settings.html',
+        controller: 'SettingsCtrl'
       }
     }
   });
