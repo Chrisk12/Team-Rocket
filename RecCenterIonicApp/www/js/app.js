@@ -98,7 +98,51 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         controller: 'SettingsCtrl'
       }
     }
-  });
+  })
+
+  //
+  //  States for pages inside of Settings tab
+  //
+
+  .state('tab.email', {
+    url: '/email',
+    views: {
+      'tab-settings': {
+        templateUrl: 'templates/settings/email.html',
+        controller: 'EmailCtrl'
+      }
+    }
+  })
+
+  .state('tab.password', {
+    url: '/password',
+    views: {
+      'tab-settings': {
+        templateUrl: 'templates/settings/password.html',
+        controller: 'PasswordCtrl'
+      }
+    }
+  })
+
+  .state('tab.favorites', {
+    url: '/favorites',
+    views: {
+      'tab-settings': {
+        templateUrl: 'templates/settings/favorites.html',
+        controller: 'FavCtrl'
+      }
+    }
+  })
+
+  .state('tab.friends', {
+    url: '/friends',
+    views: {
+      'tab-settings': {
+        templateUrl: 'templates/settings/friends.html',
+        controller: 'FriendCtrl'
+      }
+    }
+  })
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/dash');
