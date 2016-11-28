@@ -39,8 +39,67 @@ angular.module('starter.controllers', [])
   }
 })
 
-.controller('SettingsCtrl', function($scope) {
+.controller('SettingsCtrl', function($scope, $ionicPopup) {
   $scope.settings = {
     enableFriends: true
-  };
-});
+  }
+
+  $scope.signoutConfirm = function() {
+  
+      var confirmPopup = $ionicPopup.confirm({
+         title: 'Sign Out?',
+      });
+
+      confirmPopup.then(function(res) {
+         if(res) {
+            console.log('Yes');
+         } else {
+            console.log('No');
+         }
+      });
+    
+   };
+
+  $scope.deleteAccountConfirm = function() {
+  
+      var confirmPopup = $ionicPopup.confirm({
+         title: 'Delete Account?',
+         template: 'Are you sure?'
+      });
+
+      confirmPopup.then(function(res) {
+         if(res) {
+            console.log('Yes');
+         } else {
+            console.log('No');
+         }
+      });
+    
+   };
+})
+
+//
+//  Controllers for pages in Settings Tab
+//
+
+.controller('EmailCtrl', function($scope) {
+  $scope.setNavTitle = function(email) {
+   $ionicNavBarDelegate.title(email);
+  }
+})
+
+.controller('PasswordCtrl', function($scope){
+  $scope.setNavTitle = function(password) {
+   $ionicNavBarDelegate.title(ChangePassword);
+  }
+})
+
+.controller('FavCtrl', function($scope) {})
+
+.controller('FriendCtrl', function($scope) {})
+
+.controller('SignOutCtrl', function($scope, $ionicPopup) {
+
+})
+
+.controller('DeleteAccCtrl', function($scope) {});
