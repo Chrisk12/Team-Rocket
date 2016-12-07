@@ -1,5 +1,42 @@
 angular.module('starter.controllers', [])
 
+.controller('WelcomeCtrl', function($scope, $state, UserService, $ionicLoading) {
+
+  //This method is executed when the user press the "Login with Google" button
+  $scope.googleSignIn = function() {
+    $ionicLoading.show({
+      template: 'Logging in...'
+    });
+    
+    $state.go('tab.dash');
+    $ionicLoading.hide();
+      //commented out until the functionality is working
+/*    window.plugins.GooglePlus.login(
+        {},
+        function (user_data) {
+          console.log(user_data);
+
+          //for the purpose of this example I will store user data on local storage
+          UserService.setUser({
+            userID: user_data.userId,
+            name: user_data.displayName,
+            email: user_data.email,
+            picture: user_data.imageUrl,
+            accessToken: user_data.accessToken,
+            idToken: user_data.idToken
+          });
+
+          $ionicLoading.hide();
+          $state.go('tab.dash');
+        },
+        function (msg) {
+          $ionicLoading.hide();
+          console.log(msg);
+        }
+    );*/
+  };
+})
+
 .controller('DashCtrl', function($scope) {})
 
 .controller('EventsCtrl', function($scope, Events) {
