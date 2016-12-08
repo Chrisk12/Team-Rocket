@@ -1,5 +1,8 @@
 <ion-view view-title="Events">
-  
+   <ion-nav-buttons side="right">
+      <i class="ion-plus" style="font-size:20px; padding-top:5px; padding-right:7px" ng-click="addEvent()"></i>
+   </ion-nav-buttons>
+
   <ion-content>
 
     <div class="bar bar-header item-input-inset">
@@ -10,10 +13,12 @@
     </div>
 
     <ion-list>
-      <ion-item ng-repeat="event in events | filter:{title: searchTerm}" class="item-thumbnail-left">
-         <img ng-click="chooseEvent(event)" ng-src="{{event.img}}">
-         <h2 ng-click="chooseEvent(event)">{{event.title}}</h2>
-      </ion-item>
+      <div ng-repeat="event in events | filter:{title: searchTerm}" class="card">
+         <ion-item class="item-thumbnail-left" ng-click="chooseEvent(event)">
+            <img ng-src="{{event.img}}">
+            <h2>{{event.title}}</h2>
+         </ion-item>
+      </div>
     </ion-list>
 
    </div>

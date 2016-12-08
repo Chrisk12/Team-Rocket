@@ -14,5 +14,9 @@ app.controller('EventsController', function($scope) {
 
    $scope.chooseEvent = function(event) {
       console.log(event.title);
-   }
+   };
+
+   $scope.addEvent = function() {
+      console.log('add event clicked');
+   };
 });
