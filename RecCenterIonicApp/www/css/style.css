@@ -1,1 +1,28 @@
 /* Empty. Add your own CSS if you like */
+.avatar-img-size{
+	width:100% !important;  
+	height : 100% !important;  
+	max-width: 150px !important;  //any size
+	max-height: 150px !important; //any size 
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.center-text{
+	text-align: center;
+}
+
+.right-text{
+	text-align: right;
+}
+
+.big-icon{
+	width:100% !important;  
+	height : 100% !important;  
+	max-width: 100px !important;  //any size
+	max-height: 100px !important; //any size 
+}

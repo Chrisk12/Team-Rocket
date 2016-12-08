@@ -1,9 +1,44 @@
 <ion-view view-title="Account">
+
+
   <ion-content>
-    <ion-list>
-    <ion-toggle  ng-model="settings.enableFriends">
-        Enable Friends
-    </ion-toggle>
+    <ion-list inset>
+    	<div class = "padding-top">
+    		<img class="avatar-img-size center" src="/img/ben.png">
+    		<h2 class ="center-text">John Doe</h2>
+    		<p class="center-text">Lets get fit!</p>
+    		<p class="right-text padding-right">My Goal</p>
+    	</div>
+
+    	<ion-item>
+    		<a class="item-icon-left item-icon-right">
+    			<p class="center-text">Average Duration</p>
+	    		<i class = "icon ion-ios-body padding-left"> </i>
+	    		<i class="icon ion-android-walk"></i>
+	    	</a>
+    	</ion-item>
+       	<ion-item>
+    		<a class="item-icon-left item-icon-right">
+    			<p class="center-text">Total Joined Events</p>
+	    		<i class = "icon ion-ios-body padding-left"> </i>
+	    		<i class="icon ion-android-walk"></i>
+	    	</a>
+    	</ion-item>
+    	<ion-item>
+    		<a class="item-icon-left item-icon-right">
+    			<p class="center-text">Total Calories Burned</p>
+	    		<i class = "icon ion-ios-body padding-left"> </i>
+	    		<i class="icon ion-android-walk"></i>
+	    	</a>
+    	</ion-item>
+       	<ion-item>
+    		<a class="item-icon-left item-icon-right">
+    			<p class="center-text">My Reservations</p>
+	    		<i class = "icon ion-ios-body padding-left"> </i>
+	    		<i class="icon ion-android-walk"></i>
+	    	</a>
+    	</ion-item>
+
     </ion-list>
   </ion-content>
 </ion-view>
