@@ -1,0 +1,20 @@
+<ion-view view-title="Sign In">
+    <ion-content>
+        <div class="list">
+            <label class="item item-input item-floating-label">
+                <span class="input-label">E-mail Address</span>
+                <input type="email" placeholder="E-mail Address" ng-model="input.email" value="input.email">
+            </label>
+
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Password</span>
+                <input type="password" placeholder="Password" ng-model="input.password">
+            </label>
+        </div>
+
+        <div class="padding">
+            <button class="button button-block button-positive" ng-click="signIn()">Sign in</button>
+        </div>
+
+    </ion-content>
+</ion-view>

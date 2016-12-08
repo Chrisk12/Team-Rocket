@@ -1,0 +1,25 @@
+<ion-view view-title="Become a member">
+    <ion-content>
+        <div class="list">
+            <label class="item item-input item-floating-label">
+                <span class="input-label">E-mail Address</span>
+                <input type="email" placeholder="E-mail Address" ng-model="input.email">
+            </label>
+
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Password</span>
+                <input type="password" placeholder="Password" ng-model="input.password">
+            </label>
+
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Re-enter Password</span>
+                <input type="password" placeholder="Re-enter Password" ng-model="input.reEntered">
+            </label>
+        </div>
+
+        <div class="padding">
+            <button class="button button-block button-positive" ng-click="signUp()">Sign up</button>
+        </div>
+
+    </ion-content>
+</ion-view>
